@@ -1,0 +1,19 @@
+{
+  "name": "Muves",
+  "version": "1.0.0",
+  "description": "Chrome extension that reminds you to get up every 30 minutes",
+  "manifest_version": 3,
+  "author": "Luca Argentieri",
+  "icons": {
+    "48": "/public/icon-48.png",
+    "128": "/public/icon-128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Muves"
+  },
+  "permissions": ["alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
